@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 #variables to adjust the parameter
 
 initialMoney = 3000
-baseMoney = 2000
+investMoneyPerTime = 2000
 stepEsclatingMoney = 0
 lastTimeMoney = 0
 
@@ -54,7 +54,7 @@ sumPaidMoney = initialMoney
 stockVolumList.append(sumBoughtStock)
 paidMoneyTrendList = []
 for perStock in boughtStocks:
-    money = baseMoney + lastTimeMoney
+    money = investMoneyPerTime + lastTimeMoney
     stockVolumList.append(money/perStock)
     sumBoughtStock += money/perStock
     sumPaidMoney += money
